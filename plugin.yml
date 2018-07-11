@@ -1,0 +1,5 @@
+name: SkinCrashWorkaround1.5.0
+author: SalmonDE
+version: 1.0.0
+api: [3.0.0]
+main: SalmonDE\SkinCrashWorkaround
