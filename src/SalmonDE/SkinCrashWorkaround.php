@@ -16,6 +16,8 @@ use pocketmine\utils\UUID;
 
 class SkinCrashWorkaround extends PluginBase implements Listener {
 
+    public const REMOVE_DELAY = 70;
+
     public function onEnable(): void{
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
@@ -49,7 +51,7 @@ class SkinCrashWorkaround extends PluginBase implements Listener {
 
                         $this->player->directDataPacket($pk);
                     }
-                }, 100);
+                }, self::REMOVE_DELAY);
             }
         }
     }
